@@ -1,1 +1,1 @@
-# SI_2022_lab1_203047
+Aneta Solunska 203047
