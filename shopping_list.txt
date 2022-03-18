@@ -3,3 +3,6 @@ noodles x 1
 bread x 1
 juice x 2
 chocolate x 3
+water x 2
+chocolate x 4
+eggs x 8
