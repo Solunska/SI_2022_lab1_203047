@@ -1,5 +1,5 @@
 milk x 3
-noodles x 2
+noodles x 1
 bread x 1
 juice x 2
 chocolate x 4
