@@ -1,0 +1,174 @@
+4. клонирање на репозиториумот
+git clone https://github.com/Solunska/SI_2022_lab1_203047.git
+cd SI_2022_lab1_203047
+
+5.
+git add .
+git commit -m "Add 5 items to the shopping list"
+
+6.
+git add .
+git commit -m "Add quantities to the items"
+
+7.
+git checkout -b branch1
+git checkout -b branch2
+
+8.
+git log
+commit 64581fc565b45358c1e0d1f4efc2944e6ff8446c (HEAD -> branch2, master, branch1)
+Author: Solunska <a_solunska@outlook.com>
+Date:   Fri Mar 18 14:39:10 2022 +0100
+
+    Add quantities to the items
+
+commit 7353b4e09599a5b8d359dc59d7e352b91ca6be8c
+Author: Solunska <a_solunska@outlook.com>
+Date:   Fri Mar 18 14:38:25 2022 +0100
+
+    Add items to the shopping list
+
+commit 3122b697ee77176d8eb56747d8ffa885eb234715 (origin/master, origin/HEAD)
+Author: Solunska <100601635+Solunska@users.noreply.github.com>
+Date:   Fri Mar 18 14:31:55 2022 +0100
+
+    Initial commit
+
+commit b8b1fc55ac135660702e76f82f4bd85274475a5b
+Author: Solunska <100601635+Solunska@users.noreply.github.com>
+Date:   Fri Mar 18 14:31:02 2022 +0100
+
+    Initial commit
+
+9.
+git checkout master
+git push origin master
+git checkout branch1
+git push origin branch1
+git checkout branch2
+git push origin branch2
+
+
+10.
+git checkout branch1
+
+11.
+git add .
+git commit -m "Change quantity of item #5"
+
+12.
+git checkout master
+
+13.
+git add .
+git commit -m "Change quantity of item #2"
+
+14.
+git push origin master
+git checkout branch1
+git push origin branch1
+
+15.
+git checkout branch2
+
+16.
+git add .
+git commit -m "Modify item #4"
+
+17.
+git log
+commit 6ff22fd30a1c605ad3a0ede0aa82b2c43385ebea (HEAD -> branch2)
+Author: Solunska <a_solunska@outlook.com>
+Date:   Fri Mar 18 14:45:00 2022 +0100
+
+    Modify item #4
+
+commit 64581fc565b45358c1e0d1f4efc2944e6ff8446c (origin/branch2)
+Author: Solunska <a_solunska@outlook.com>
+Date:   Fri Mar 18 14:39:10 2022 +0100
+
+    Add quantities to the items
+
+commit 7353b4e09599a5b8d359dc59d7e352b91ca6be8c
+Author: Solunska <a_solunska@outlook.com>
+Date:   Fri Mar 18 14:38:25 2022 +0100
+
+    Add items to the shopping list
+
+commit 3122b697ee77176d8eb56747d8ffa885eb234715
+Author: Solunska <100601635+Solunska@users.noreply.github.com>
+Date:   Fri Mar 18 14:31:55 2022 +0100
+
+    Initial commit
+
+commit b8b1fc55ac135660702e76f82f4bd85274475a5b
+Author: Solunska <100601635+Solunska@users.noreply.github.com>
+Date:   Fri Mar 18 14:31:02 2022 +0100
+
+    Initial commit
+
+
+18.
+git add .
+git commit --amend -m "Modify item #4 and add item #6"
+
+19.
+git log
+commit 701cd854c810382d4e14df6040586538a1390658 (HEAD -> branch2)
+Author: Solunska <a_solunska@outlook.com>
+Date:   Fri Mar 18 14:45:00 2022 +0100
+
+    Modify item #4 and add item #6
+
+commit 64581fc565b45358c1e0d1f4efc2944e6ff8446c (origin/branch2)
+Author: Solunska <a_solunska@outlook.com>
+Date:   Fri Mar 18 14:39:10 2022 +0100
+
+    Add quantities to the items
+
+commit 7353b4e09599a5b8d359dc59d7e352b91ca6be8c
+Author: Solunska <a_solunska@outlook.com>
+Date:   Fri Mar 18 14:38:25 2022 +0100
+
+    Add items to the shopping list
+
+commit 3122b697ee77176d8eb56747d8ffa885eb234715
+Author: Solunska <100601635+Solunska@users.noreply.github.com>
+Date:   Fri Mar 18 14:31:55 2022 +0100
+
+    Initial commit
+
+commit b8b1fc55ac135660702e76f82f4bd85274475a5b
+Author: Solunska <100601635+Solunska@users.noreply.github.com>
+Date:   Fri Mar 18 14:31:02 2022 +0100
+
+    Initial commit
+
+
+20.
+git checkout master
+git merge branch1
+
+-----не се случи конфликт
+
+21.
+git merge branch2
+
+КОНФЛИКТ:
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+конфликтот го решив така што ги прифатив и двете промени и ги споив
+
+git add .
+git commit -m "Merge branch 'branch2'"
+
+22.
+git add "203047.txt"
+git commit -m "Add docs"
+
+23.
+git push origin master
+git checkout branch2
+git push origin branch2
