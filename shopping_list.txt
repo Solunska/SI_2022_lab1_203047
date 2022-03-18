@@ -1,0 +1,5 @@
+milk
+noodles
+bread
+juice
+chocolate
